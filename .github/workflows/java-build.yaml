@@ -37,7 +37,7 @@ jobs:
     needs: build
     if: ${{ github.event_name == 'push' && !contains(github.event.head_commit.message, '[skip docker]') }}
     env:
-      ART_URL: 430118834478.dkr.ecr.eu-north-1.amazonaws.com/ashish-app
+      ART_URL: 430118834478.dkr.ecr.us-west-1.amazonaws.com/ashish-app
       REPO: demo
     steps:
     - name: Checkout code
