@@ -39,6 +39,7 @@ jobs:
     env:
       ART_URL: 430118834478.dkr.ecr.us-west-1.amazonaws.com
       REPO: ashish-app
+      AWS_REGION : "us-west-1"
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -66,5 +67,5 @@ jobs:
     - name: Build and push Docker image
       run: |
         docker images
-        docker build -t $ART_URL/$REPO/hello-world:latest .
-        docker push $ART_URL/$REPO/hello-world:latest
+        docker build -t ${{ env.ART_URL }}/${{ env.REPO }}:latest .
+        docker push ${{ env.ART_URL }}/${{ env.REPO }}:latest
