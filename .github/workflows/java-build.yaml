@@ -62,7 +62,7 @@ jobs:
     - name: Log in to Docker Hub
       uses: docker/login-action@v3
       with:
-        registry: $ {{ ART_URL }}
+        registry: ${{ ART_URL }}
 
     - name: Build and push Docker image
       run: |
