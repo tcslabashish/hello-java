@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     env:
-      ART_URL: 762233772622.dkr.ecr.us-east-1.amazonaws.com/
+      ART_URL: 762233772622.dkr.ecr.us-east-1.amazonaws.com
       REPO: ashish-app
       AWS_REGION : "us-east-1"
     steps:
