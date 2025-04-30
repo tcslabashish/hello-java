@@ -38,9 +38,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     env:
-      ART_URL: 430118834478.dkr.ecr.us-west-1.amazonaws.com
+      ART_URL: 762233772622.dkr.ecr.us-east-1.amazonaws.com/ashish-app
       REPO: ashish-app
-      AWS_REGION : "us-west-1"
+      AWS_REGION : "us-east-1"
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
